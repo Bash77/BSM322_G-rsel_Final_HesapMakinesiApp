@@ -12,22 +12,20 @@ namespace HesapMakinesiApp
             InitializeComponent();
         }
 
-        // Sayı tuşlarına basıldığında çalışır
-        private void OnDigitClicked(object sender, EventArgs e)
+         private void OnDigitClicked(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             EntryGiris.Text += btn.Text;
         }
 
-        // İşlem tuşlarına basıldığında çalışır (+, -, ×, ÷)
-        private async void OnOperatorClicked(object sender, EventArgs e)  // ✅ async eklendi
+         private async void OnOperatorClicked(object sender, EventArgs e)  // ✅ async eklendi
         {
             try
             {
                 sayi1 = double.Parse(EntryGiris.Text);
                 Button btn = (Button)sender;
                 secilenIslem = btn.Text;
-                EntryGiris.Text = ""; // yeni sayı girilecek
+                EntryGiris.Text = ""; 
             }
             catch
             {
@@ -36,7 +34,6 @@ namespace HesapMakinesiApp
             }
         }
 
-        // "=" tuşuna basıldığında sonucu hesaplar
         private async void OnEqualClicked(object sender, EventArgs e)
         {
             try
@@ -74,8 +71,7 @@ namespace HesapMakinesiApp
             }
         }
 
-        // "C" (Clear) butonu
-        private void OnClearClicked(object sender, EventArgs e)
+         private void OnClearClicked(object sender, EventArgs e)
         {
             EntryGiris.Text = "";
             EntrySonuc.Text = "";

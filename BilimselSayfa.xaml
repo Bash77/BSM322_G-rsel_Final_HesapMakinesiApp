@@ -7,34 +7,29 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
 
-            <!-- Sonuç Giriş Alanı -->
-            <Entry x:Name="BilimselEntry"
+             <Entry x:Name="BilimselEntry"
                    FontSize="28"
                    Placeholder="0"
                    HorizontalOptions="Fill"
                    Keyboard="Numeric"
                    HorizontalTextAlignment="End" />
 
-            <!-- Bilimsel İşlem Butonları -->
-            <Grid ColumnDefinitions="*,*,*,*"
+             <Grid ColumnDefinitions="*,*,*,*"
                   RowDefinitions="Auto,Auto,Auto"
                   ColumnSpacing="10"
                   RowSpacing="10">
 
-                <!-- 1. Satır -->
-                <Button Text="√" Grid.Row="0" Grid.Column="0" Clicked="OnSqrtClicked"/>
+                 <Button Text="√" Grid.Row="0" Grid.Column="0" Clicked="OnSqrtClicked"/>
                 <Button Text="xʸ" Grid.Row="0" Grid.Column="1" Clicked="OnPowerClicked"/>
                 <Button Text="eˣ" Grid.Row="0" Grid.Column="2" Clicked="OnExpClicked"/>
                 <Button Text="ln" Grid.Row="0" Grid.Column="3" Clicked="OnLnClicked"/>
 
-                <!-- 2. Satır -->
-                <Button Text="sin" Grid.Row="1" Grid.Column="0" Clicked="OnSinClicked"/>
+                 <Button Text="sin" Grid.Row="1" Grid.Column="0" Clicked="OnSinClicked"/>
                 <Button Text="cos" Grid.Row="1" Grid.Column="1" Clicked="OnCosClicked"/>
                 <Button Text="tan" Grid.Row="1" Grid.Column="2" Clicked="OnTanClicked"/>
                 <Button Text="log" Grid.Row="1" Grid.Column="3" Clicked="OnLogClicked"/>
 
-                <!-- 3. Satır -->
-                <Button Text="C" Grid.Row="2" Grid.Column="0" Clicked="OnClearClicked"/>
+                 <Button Text="C" Grid.Row="2" Grid.Column="0" Clicked="OnClearClicked"/>
                 <Button Text="=" Grid.Row="2" Grid.Column="1" Clicked="OnEqualClicked"/>
                 <Button Text="π" Grid.Row="2" Grid.Column="2" Clicked="OnPiClicked"/>
                 <Button Text="e" Grid.Row="2" Grid.Column="3" Clicked="OnEClicked"/>

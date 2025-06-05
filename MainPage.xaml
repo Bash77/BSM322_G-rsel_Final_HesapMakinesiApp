@@ -6,29 +6,25 @@
 
     <VerticalStackLayout Padding="20" Spacing="15">
 
-        <!-- Sonuç Ekranı -->
-        <Entry x:Name="EntrySonuc"
+         <Entry x:Name="EntrySonuc"
                FontSize="32"
                HorizontalOptions="Fill"
                HorizontalTextAlignment="End"
                IsReadOnly="True"
                Placeholder="0" />
 
-        <!-- Sayı Giriş Alanı -->
-        <Entry x:Name="EntryGiris"
+         <Entry x:Name="EntryGiris"
                FontSize="24"
                HorizontalOptions="Fill"
                Keyboard="Numeric"
                Placeholder="Sayı girin" />
 
-        <!-- İşlem Butonları -->
-        <Grid ColumnDefinitions="*,*,*,*"
+         <Grid ColumnDefinitions="*,*,*,*"
               RowDefinitions="Auto,Auto,Auto,Auto"
               ColumnSpacing="10"
               RowSpacing="10">
 
-            <!-- Rakamlar -->
-            <Button Text="7" Grid.Row="0" Grid.Column="0" Clicked="OnDigitClicked"/>
+             <Button Text="7" Grid.Row="0" Grid.Column="0" Clicked="OnDigitClicked"/>
             <Button Text="8" Grid.Row="0" Grid.Column="1" Clicked="OnDigitClicked"/>
             <Button Text="9" Grid.Row="0" Grid.Column="2" Clicked="OnDigitClicked"/>
             <Button Text="+" Grid.Row="0" Grid.Column="3" Clicked="OnOperatorClicked"/>
